@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+  <test name="CRM App Test Cases(failed)">
+    <classes>
+      <class name="TestCase.SignupPageTest">
+        <methods>
+          <include name="ReadFile"/>
+          <include name="ValidateTitle"/>
+        </methods>
+      </class> <!-- TestCase.SignupPageTest -->
+    </classes>
+  </test> <!-- CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [CRM Application Test Automation Test Suite] -->

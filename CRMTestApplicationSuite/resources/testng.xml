@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRM Application Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="ExtentReport.ExtentReportTest" />
+	</listeners>
+	
+	<listeners>
+        <listener class-name="Analyzer.MyTransformer"/>
+  </listeners>
+
+
+	<test name="CRM App Test Cases"  thread-count="1">
+		<classes>
+			<class name="TestCase.LoginPageTest"></class>
+			<class name="TestCase.SignupPageTest"></class>
+			<class name="TestCase.ReportPageTest"></class>
+			<class name="TestCase.ContactsPageTest"></class>
+			<class name="TestCase.DocumentPageTest"></class>
+			<class name="TestCase.FormPageTest"></class>
+		
+		</classes>
+	</test>
+</suite>
