@@ -5,6 +5,7 @@ import TestBase.Base;
 import java.io.IOException;
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -52,6 +53,15 @@ public void ValidateNewDoc() throws InterruptedException
 	
 	doc.NewDocs("title", "description", "23", "search","asas");
 	
+	
+}
+
+
+@AfterMethod
+
+public void tearDown() {
+	
+	driver.quit();
 	
 }
 

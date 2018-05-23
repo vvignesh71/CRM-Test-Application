@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FreeCRMSuite">
+
+<listeners>
+<listener class-name="Util.ListenerTest"/>
+</listeners>
+
+  <test thread-count="5" name="FreeCRMTest">
+    <classes>
+      <class name="TestCase.FormPageTest"/>
+      <class name="TestCase.ContactsPageTest"/>
+      <class name="TestCase.DocumentPageTest"/>
+      <class name="TestCase.ReportPageTest"/>
+      <class name="TestCase.SignupPageTest"/>
+      <class name="TestCase.LoginPageTest"/>
+    </classes>
+  </test> <!-- FreeCRMTest -->
+</suite> <!-- FreeCRMSuite -->

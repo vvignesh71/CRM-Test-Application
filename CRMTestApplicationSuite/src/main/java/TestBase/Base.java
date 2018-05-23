@@ -30,7 +30,7 @@ public class Base {
 		try {
 			prop = new Properties();
 			
-			FileInputStream fis = new FileInputStream("C:\\Users\\Lenovo\\eclipse-workspace\\CRMTestApplicationSuite\\src\\main\\java\\Config\\config.properties");
+			FileInputStream fis = new FileInputStream("C:\\Users\\User\\git\\CRM-Test-Application\\CRMTestApplicationSuite\\src\\main\\java\\Config\\config.properties");
 				prop.load(fis);
 		} catch (FileNotFoundException e) {
 			System.out.println("File Not Found");
@@ -51,7 +51,7 @@ public class Base {
 				 {
 					 
 					 try {
-						System.setProperty("webdriver.chrome.driver","C:\\Users\\Lenovo\\Downloads\\chromedriver.exe");
+						System.setProperty("webdriver.chrome.driver","C:\\Users\\User\\Downloads\\chromedriver.exe");
 						 driver = new ChromeDriver();
 					} catch (Exception e) {
 						// TODO Auto-generated catch block

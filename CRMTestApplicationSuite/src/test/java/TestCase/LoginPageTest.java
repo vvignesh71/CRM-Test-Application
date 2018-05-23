@@ -3,6 +3,7 @@ package TestCase;
 
 
 import org.apache.log4j.Logger;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -51,6 +52,14 @@ public void ValidateLogin()
 
 {    log.info("*************Navigating To Home Screen ****************");
 	login.logincheck(prop.getProperty("username"), prop.getProperty("password"));
+	
+}
+
+@AfterMethod
+
+public void tearDown() {
+	
+	driver.quit();
 	
 }
 }

@@ -3,6 +3,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -66,6 +67,14 @@ public Object[][] getCRMTestData()
 		form.FormClick(Title, Report, Description, Welcome, Confirm);
 
 				
+	}
+	
+	@AfterMethod
+
+	public void tearDown() {
+		
+		driver.quit();
+		
 	}
 	
 }
