@@ -2,9 +2,15 @@ package TestCase;
 
 import TestBase.Base;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -58,11 +64,29 @@ public void ValidateNewDoc() throws InterruptedException
 
 
 @AfterMethod
-
-public void tearDown() {
+public void screenShot(ITestResult result){
+	if(ITestResult.FAILURE==result.getStatus()){
+		
+			 
+			 try {
+				TakesScreenshot screenshot=(TakesScreenshot)driver;
+				 File src=screenshot.getScreenshotAs(OutputType.FILE);
+				 File dest=  new File("D:\\Screen\\" +result.getName()+ ".png");
+					FileUtils.copyFile(src, dest);
+			} catch (WebDriverException e) {
+				
+				System.out.println("Not able to generate screenshot");
+				
+				e.printStackTrace();
+			} catch (IOException e) {
+				
+				System.out.println("Not able to save the screenshot in the mentioned screenshot");
+				
+			}
+		 }
 	
 	driver.quit();
-	
+		 
 }
 
 }

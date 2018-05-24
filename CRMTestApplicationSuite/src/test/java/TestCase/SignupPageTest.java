@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -72,11 +73,29 @@ public class SignupPageTest extends Base {
 	}
 		
 	@AfterMethod
-
-	public void tearDown() {
+	public void screenShot(ITestResult result){
+		if(ITestResult.FAILURE==result.getStatus()){
+			
+				 
+				 try {
+					TakesScreenshot screenshot=(TakesScreenshot)driver;
+					 File src=screenshot.getScreenshotAs(OutputType.FILE);
+					 File dest=  new File("D:\\Screen\\" +result.getName()+ ".png");
+						FileUtils.copyFile(src, dest);
+				} catch (WebDriverException e) {
+					
+					System.out.println("Not able to generate screenshot");
+					
+					e.printStackTrace();
+				} catch (IOException e) {
+					
+					System.out.println("Not able to save the screenshot in the mentioned screenshot");
+					
+				}
+			 }
 		
 		driver.quit();
-		
+			 
 	}
 	
 }

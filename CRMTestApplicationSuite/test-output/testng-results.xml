@@ -1,250 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="2" ignored="0" total="9" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FreeCRMSuite" duration-ms="178499" started-at="2018-05-23T12:38:26Z" finished-at="2018-05-23T12:41:25Z">
+  <suite name="Default suite" duration-ms="22820" started-at="2018-05-24T04:42:25Z" finished-at="2018-05-24T04:42:48Z">
     <groups>
     </groups>
-    <test name="FreeCRMTest" duration-ms="178499" started-at="2018-05-23T12:38:26Z" finished-at="2018-05-23T12:41:25Z">
-      <class name="TestCase.SignupPageTest">
-        <test-method status="PASS" signature="ReadFile()[pri:0, instance:TestCase.SignupPageTest@2b552920]" name="ReadFile" is-config="true" duration-ms="18593" started-at="2018-05-23T18:09:16Z" finished-at="2018-05-23T18:09:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReadFile -->
-        <test-method status="PASS" signature="ValidateFormFill()[pri:1, instance:TestCase.SignupPageTest@2b552920]" name="ValidateFormFill" duration-ms="9630" started-at="2018-05-23T18:09:35Z" finished-at="2018-05-23T18:09:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateFormFill -->
-        <test-method status="PASS" signature="ReadFile()[pri:0, instance:TestCase.SignupPageTest@2b552920]" name="ReadFile" is-config="true" duration-ms="9684" started-at="2018-05-23T18:10:43Z" finished-at="2018-05-23T18:10:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReadFile -->
-        <test-method status="FAIL" signature="ValidateTitle()[pri:2, instance:TestCase.SignupPageTest@2b552920]" name="ValidateTitle" duration-ms="2126" started-at="2018-05-23T18:10:53Z" finished-at="2018-05-23T18:10:55Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [CRMPRO - CRM Pro for customer relationship management, sales, and suppor] but found [CRMPRO - CRM Pro for customer relationship management, sales, and support]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [CRMPRO - CRM Pro for customer relationship management, sales, and suppor] but found [CRMPRO - CRM Pro for customer relationship management, sales, and support]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.Assert.assertEquals(Assert.java:199)
-	at Pages.Signup.TitleCheck(Signup.java:81)
-	at TestCase.SignupPageTest.ValidateTitle(SignupPageTest.java:60)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateTitle -->
-      </class> <!-- TestCase.SignupPageTest -->
-      <class name="TestCase.DocumentPageTest">
-        <test-method status="PASS" signature="startup()[pri:0, instance:TestCase.DocumentPageTest@3701eaf6]" name="startup" is-config="true" duration-ms="25380" started-at="2018-05-23T18:10:17Z" finished-at="2018-05-23T18:10:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startup -->
-        <test-method status="FAIL" signature="ValidateNewDoc()[pri:1, instance:TestCase.DocumentPageTest@3701eaf6]" name="ValidateNewDoc" duration-ms="476" started-at="2018-05-23T18:10:43Z" finished-at="2018-05-23T18:10:43Z">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'FINATEL-01', ip: '192.168.1.201', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\User\AppData\Local\TEMP%M~1\bin\scoped_dir3620_14167}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 881a3306c422798c1ee34f31437ad943
-*** Element info: {Using=css selector, value=frame[name='mainpanel'],iframe[name='mainpanel']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=66.0.3359.181)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
-System info: host: 'FINATEL-01', ip: '192.168.1.201', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7), userDataDir=C:\Users\User\AppData\Local\TEMP%M~1\bin\scoped_dir3620_14167}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=66.0.3359.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 881a3306c422798c1ee34f31437ad943
-*** Element info: {Using=css selector, value=frame[name='mainpanel'],iframe[name='mainpanel']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:443)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByCssSelector(RemoteWebDriver.java:514)
-	at org.openqa.selenium.By$ByCssSelector.findElements(By.java:441)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:404)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:975)
-	at Util.Utility.switchToFrame(Utility.java:19)
-	at TestCase.DocumentPageTest.ValidateNewDoc(DocumentPageTest.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateNewDoc -->
-      </class> <!-- TestCase.DocumentPageTest -->
+    <test name="Default test" duration-ms="22820" started-at="2018-05-24T04:42:25Z" finished-at="2018-05-24T04:42:48Z">
       <class name="TestCase.ContactsPageTest">
-        <test-method status="PASS" signature="StartUp()[pri:0, instance:TestCase.ContactsPageTest@5c5a1b69]" name="StartUp" is-config="true" duration-ms="18271" started-at="2018-05-23T18:09:44Z" finished-at="2018-05-23T18:10:03Z">
+        <test-method status="PASS" signature="StartUp()[pri:0, instance:TestCase.ContactsPageTest@57fffcd7]" name="StartUp" is-config="true" duration-ms="19587" started-at="2018-05-24T10:12:25Z" finished-at="2018-05-24T10:12:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartUp -->
-        <test-method status="PASS" signature="CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@5c5a1b69]" name="CompanyClick" duration-ms="2442" started-at="2018-05-23T18:10:03Z" finished-at="2018-05-23T18:10:05Z">
+        <test-method status="PASS" signature="CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@57fffcd7]" name="CompanyClick" duration-ms="2407" started-at="2018-05-24T10:12:45Z" finished-at="2018-05-24T10:12:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CompanyClick -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.ContactsPageTest@57fffcd7]" name="screenShot" is-config="true" duration-ms="800" started-at="2018-05-24T10:12:47Z" finished-at="2018-05-24T10:12:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CompanyClick status=SUCCESS method=ContactsPageTest.CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@57fffcd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
       </class> <!-- TestCase.ContactsPageTest -->
-      <class name="TestCase.ReportPageTest">
-        <test-method status="PASS" signature="StartUp()[pri:0, instance:TestCase.ReportPageTest@627551fb]" name="StartUp" is-config="true" duration-ms="44177" started-at="2018-05-23T18:08:26Z" finished-at="2018-05-23T18:09:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StartUp -->
-        <test-method status="PASS" signature="ReportClickable()[pri:0, instance:TestCase.ReportPageTest@627551fb]" name="ReportClickable" duration-ms="5427" started-at="2018-05-23T18:09:11Z" finished-at="2018-05-23T18:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReportClickable -->
-      </class> <!-- TestCase.ReportPageTest -->
-      <class name="TestCase.LoginPageTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCase.LoginPageTest@2758fe70]" name="start" is-config="true" duration-ms="12132" started-at="2018-05-23T18:10:05Z" finished-at="2018-05-23T18:10:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="ValidateTitle()[pri:1, instance:TestCase.LoginPageTest@2758fe70]" name="ValidateTitle" duration-ms="31" started-at="2018-05-23T18:10:17Z" finished-at="2018-05-23T18:10:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateTitle -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCase.LoginPageTest@2758fe70]" name="start" is-config="true" duration-ms="12466" started-at="2018-05-23T18:10:55Z" finished-at="2018-05-23T18:11:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="ValidateLogo()[pri:2, instance:TestCase.LoginPageTest@2758fe70]" name="ValidateLogo" duration-ms="80" started-at="2018-05-23T18:11:07Z" finished-at="2018-05-23T18:11:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateLogo -->
-        <test-method status="PASS" signature="start()[pri:0, instance:TestCase.LoginPageTest@2758fe70]" name="start" is-config="true" duration-ms="10890" started-at="2018-05-23T18:11:07Z" finished-at="2018-05-23T18:11:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="ValidateLogin()[pri:3, instance:TestCase.LoginPageTest@2758fe70]" name="ValidateLogin" duration-ms="6599" started-at="2018-05-23T18:11:18Z" finished-at="2018-05-23T18:11:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateLogin -->
-      </class> <!-- TestCase.LoginPageTest -->
-      <class name="TestCase.FormPageTest">
-        <test-method status="SKIP" signature="ValidateNewFormClick(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestCase.FormPageTest@43814d18]" name="ValidateNewFormClick" duration-ms="0" started-at="2018-05-23T18:09:16Z" data-provider="getCRMTestData" finished-at="2018-05-23T18:09:16Z">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[java.lang.NullPointerException]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:115)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
-	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
-	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.NullPointerException
-	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:65)
-	at Util.Utility.getTestData(Utility.java:42)
-	at TestCase.FormPageTest.getCRMTestData(FormPageTest.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:55)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-	... 22 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateNewFormClick -->
-      </class> <!-- TestCase.FormPageTest -->
-    </test> <!-- FreeCRMTest -->
-  </suite> <!-- FreeCRMSuite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
