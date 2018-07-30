@@ -12,7 +12,7 @@ public class ListenerTest  implements ITestListener
 
 	public void onFinish(ITestContext finish) {
 		
-		System.out.println("************************************");
+		
 		
 		System.out.println("Execution Completed ");
 		
@@ -31,7 +31,7 @@ public class ListenerTest  implements ITestListener
 
 	public void onTestFailure(ITestResult fail) {
 		
-		System.out.println("------------------------------");
+	
 		
 		
 		 System.out.println("The name of the testcase failed is :"+fail.getName());	
@@ -45,8 +45,6 @@ public class ListenerTest  implements ITestListener
 
 	public void onTestStart(ITestResult arg0) {
 
-		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-		
 		
 		System.out.println("Execution has started");
 		

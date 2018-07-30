@@ -34,15 +34,11 @@ public class ContactsPageTest extends Base {
 	public void StartUp()
 	
 	{  
-	
-	
+
 		FileRead();
 		initialize();	
 		
-		login =  new Login();
-		
-		
-		
+		login =  new Login();		
 		login.logincheck(prop.getProperty("username"),prop.getProperty("password"));
 		home= new Home();
 		util = new Utility();
@@ -51,8 +47,6 @@ public class ContactsPageTest extends Base {
 		
 	}
 	
-
-
 
 @Test(priority=1)
 
@@ -66,7 +60,6 @@ public void CompanyClick() throws Exception
 	
 	
 }
-
 
 
 @AfterMethod

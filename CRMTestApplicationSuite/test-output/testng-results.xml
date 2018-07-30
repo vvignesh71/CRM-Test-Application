@@ -1,25 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" ignored="0" total="9" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22820" started-at="2018-05-24T04:42:25Z" finished-at="2018-05-24T04:42:48Z">
+  <suite name="FreeCRMSuite" duration-ms="144862" started-at="2018-07-25T09:13:57Z" finished-at="2018-07-25T09:16:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22820" started-at="2018-05-24T04:42:25Z" finished-at="2018-05-24T04:42:48Z">
-      <class name="TestCase.ContactsPageTest">
-        <test-method status="PASS" signature="StartUp()[pri:0, instance:TestCase.ContactsPageTest@57fffcd7]" name="StartUp" is-config="true" duration-ms="19587" started-at="2018-05-24T10:12:25Z" finished-at="2018-05-24T10:12:45Z">
+    <test name="FreeCRMTest" duration-ms="144862" started-at="2018-07-25T09:13:57Z" finished-at="2018-07-25T09:16:22Z">
+      <class name="TestCase.SignupPageTest">
+        <test-method status="PASS" signature="ReadFile()[pri:0, instance:TestCase.SignupPageTest@578486a3]" name="ReadFile" is-config="true" duration-ms="8623" started-at="2018-07-25T14:44:28Z" finished-at="2018-07-25T14:44:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- StartUp -->
-        <test-method status="PASS" signature="CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@57fffcd7]" name="CompanyClick" duration-ms="2407" started-at="2018-05-24T10:12:45Z" finished-at="2018-05-24T10:12:47Z">
+        </test-method> <!-- ReadFile -->
+        <test-method status="PASS" signature="ValidateFormFill()[pri:1, instance:TestCase.SignupPageTest@578486a3]" name="ValidateFormFill" duration-ms="7065" started-at="2018-07-25T14:44:37Z" finished-at="2018-07-25T14:44:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CompanyClick -->
-        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.ContactsPageTest@57fffcd7]" name="screenShot" is-config="true" duration-ms="800" started-at="2018-05-24T10:12:47Z" finished-at="2018-05-24T10:12:48Z">
+        </test-method> <!-- ValidateFormFill -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.SignupPageTest@578486a3]" name="screenShot" is-config="true" duration-ms="757" started-at="2018-07-25T14:44:44Z" finished-at="2018-07-25T14:44:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CompanyClick status=SUCCESS method=ContactsPageTest.CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@57fffcd7] output={null}]]]>
+                <![CDATA[[TestResult name=ValidateFormFill status=SUCCESS method=SignupPageTest.ValidateFormFill()[pri:1, instance:TestCase.SignupPageTest@578486a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="ReadFile()[pri:0, instance:TestCase.SignupPageTest@578486a3]" name="ReadFile" is-config="true" duration-ms="7997" started-at="2018-07-25T14:45:45Z" finished-at="2018-07-25T14:45:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadFile -->
+        <test-method status="FAIL" signature="ValidateTitle()[pri:2, instance:TestCase.SignupPageTest@578486a3]" name="ValidateTitle" duration-ms="6191" started-at="2018-07-25T14:45:53Z" finished-at="2018-07-25T14:46:00Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [CRMPRO - CRM Pro for customer relationship management, sales, and suppor] but found [CRMPRO - CRM Pro for customer relationship management, sales, and support]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [CRMPRO - CRM Pro for customer relationship management, sales, and suppor] but found [CRMPRO - CRM Pro for customer relationship management, sales, and support]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at Pages.Signup.TitleCheck(Signup.java:81)
+	at TestCase.SignupPageTest.ValidateTitle(SignupPageTest.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTitle -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.SignupPageTest@578486a3]" name="screenShot" is-config="true" duration-ms="1793" started-at="2018-07-25T14:46:00Z" finished-at="2018-07-25T14:46:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidateTitle status=FAILURE method=SignupPageTest.ValidateTitle()[pri:2, instance:TestCase.SignupPageTest@578486a3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- TestCase.SignupPageTest -->
+      <class name="TestCase.DocumentPageTest">
+        <test-method status="PASS" signature="startup()[pri:0, instance:TestCase.DocumentPageTest@2758fe70]" name="startup" is-config="true" duration-ms="18167" started-at="2018-07-25T14:45:09Z" finished-at="2018-07-25T14:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="ValidateNewDoc()[pri:1, instance:TestCase.DocumentPageTest@2758fe70]" name="ValidateNewDoc" duration-ms="17247" started-at="2018-07-25T14:45:27Z" finished-at="2018-07-25T14:45:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNewDoc -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.DocumentPageTest@2758fe70]" name="screenShot" is-config="true" duration-ms="996" started-at="2018-07-25T14:45:44Z" finished-at="2018-07-25T14:45:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidateNewDoc status=SUCCESS method=DocumentPageTest.ValidateNewDoc()[pri:1, instance:TestCase.DocumentPageTest@2758fe70] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- TestCase.DocumentPageTest -->
+      <class name="TestCase.ContactsPageTest">
+        <test-method status="PASS" signature="StartUp()[pri:0, instance:TestCase.ContactsPageTest@2b552920]" name="StartUp" is-config="true" duration-ms="12539" started-at="2018-07-25T14:44:45Z" finished-at="2018-07-25T14:44:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartUp -->
+        <test-method status="PASS" signature="CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@2b552920]" name="CompanyClick" duration-ms="2290" started-at="2018-07-25T14:44:57Z" finished-at="2018-07-25T14:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CompanyClick -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.ContactsPageTest@2b552920]" name="screenShot" is-config="true" duration-ms="750" started-at="2018-07-25T14:44:59Z" finished-at="2018-07-25T14:45:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CompanyClick status=SUCCESS method=ContactsPageTest.CompanyClick()[pri:1, instance:TestCase.ContactsPageTest@2b552920] output={null}]]]>
               </value>
             </param>
           </params>
@@ -27,6 +130,136 @@
           </reporter-output>
         </test-method> <!-- screenShot -->
       </class> <!-- TestCase.ContactsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TestCase.ReportPageTest">
+        <test-method status="PASS" signature="StartUp()[pri:0, instance:TestCase.ReportPageTest@1f36e637]" name="StartUp" is-config="true" duration-ms="24608" started-at="2018-07-25T14:43:57Z" finished-at="2018-07-25T14:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartUp -->
+        <test-method status="PASS" signature="ReportClickable()[pri:0, instance:TestCase.ReportPageTest@1f36e637]" name="ReportClickable" duration-ms="5507" started-at="2018-07-25T14:44:22Z" finished-at="2018-07-25T14:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReportClickable -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.ReportPageTest@1f36e637]" name="screenShot" is-config="true" duration-ms="776" started-at="2018-07-25T14:44:27Z" finished-at="2018-07-25T14:44:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReportClickable status=SUCCESS method=ReportPageTest.ReportClickable()[pri:0, instance:TestCase.ReportPageTest@1f36e637] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- TestCase.ReportPageTest -->
+      <class name="TestCase.LoginPageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:TestCase.LoginPageTest@551aa95a]" name="start" is-config="true" duration-ms="7974" started-at="2018-07-25T14:45:00Z" finished-at="2018-07-25T14:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ValidateTitle()[pri:1, instance:TestCase.LoginPageTest@551aa95a]" name="ValidateTitle" duration-ms="29" started-at="2018-07-25T14:45:08Z" finished-at="2018-07-25T14:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTitle -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.LoginPageTest@551aa95a]" name="screenShot" is-config="true" duration-ms="772" started-at="2018-07-25T14:45:08Z" finished-at="2018-07-25T14:45:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidateTitle status=SUCCESS method=LoginPageTest.ValidateTitle()[pri:1, instance:TestCase.LoginPageTest@551aa95a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="start()[pri:0, instance:TestCase.LoginPageTest@551aa95a]" name="start" is-config="true" duration-ms="8021" started-at="2018-07-25T14:46:01Z" finished-at="2018-07-25T14:46:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ValidateLogo()[pri:2, instance:TestCase.LoginPageTest@551aa95a]" name="ValidateLogo" duration-ms="100" started-at="2018-07-25T14:46:09Z" finished-at="2018-07-25T14:46:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogo -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.LoginPageTest@551aa95a]" name="screenShot" is-config="true" duration-ms="661" started-at="2018-07-25T14:46:10Z" finished-at="2018-07-25T14:46:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidateLogo status=SUCCESS method=LoginPageTest.ValidateLogo()[pri:2, instance:TestCase.LoginPageTest@551aa95a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+        <test-method status="PASS" signature="start()[pri:0, instance:TestCase.LoginPageTest@551aa95a]" name="start" is-config="true" duration-ms="7455" started-at="2018-07-25T14:46:10Z" finished-at="2018-07-25T14:46:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ValidateLogin()[pri:3, instance:TestCase.LoginPageTest@551aa95a]" name="ValidateLogin" duration-ms="3650" started-at="2018-07-25T14:46:18Z" finished-at="2018-07-25T14:46:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateLogin -->
+        <test-method status="PASS" signature="screenShot(org.testng.ITestResult)[pri:0, instance:TestCase.LoginPageTest@551aa95a]" name="screenShot" is-config="true" duration-ms="820" started-at="2018-07-25T14:46:21Z" finished-at="2018-07-25T14:46:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidateLogin status=SUCCESS method=LoginPageTest.ValidateLogin()[pri:3, instance:TestCase.LoginPageTest@551aa95a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenShot -->
+      </class> <!-- TestCase.LoginPageTest -->
+      <class name="TestCase.FormPageTest">
+        <test-method status="SKIP" signature="ValidateNewFormClick(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:TestCase.FormPageTest@627551fb]" name="ValidateNewFormClick" duration-ms="0" started-at="2018-07-25T14:44:28Z" data-provider="getCRMTestData" finished-at="2018-07-25T14:44:28Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:115)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:509)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1308)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1036)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1126)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NullPointerException
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:65)
+	at Util.Utility.getTestData(Utility.java:39)
+	at TestCase.FormPageTest.getCRMTestData(FormPageTest.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:55)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	... 22 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateNewFormClick -->
+      </class> <!-- TestCase.FormPageTest -->
+    </test> <!-- FreeCRMTest -->
+  </suite> <!-- FreeCRMSuite -->
 </testng-results>

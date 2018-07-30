@@ -30,10 +30,7 @@ public class Utility  extends Base{
 	public static Object[][] getTestData(String sheetName) {
 		
 		
-
-		try {
-			
-			
+		try {	
 			file = new FileInputStream(sheetpath);
 		} catch (FileNotFoundException e) {
 			System.out.println("Not Able to Locate File Path");

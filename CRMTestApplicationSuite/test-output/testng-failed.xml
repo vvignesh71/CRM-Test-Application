@@ -10,18 +10,14 @@
         <methods>
           <include name="ValidateNewFormClick"/>
           <include name="startup"/>
+          <include name="screenShot"/>
         </methods>
       </class> <!-- TestCase.FormPageTest -->
-      <class name="TestCase.DocumentPageTest">
-        <methods>
-          <include name="startup"/>
-          <include name="ValidateNewDoc"/>
-        </methods>
-      </class> <!-- TestCase.DocumentPageTest -->
       <class name="TestCase.SignupPageTest">
         <methods>
           <include name="ReadFile"/>
           <include name="ValidateTitle"/>
+          <include name="screenShot"/>
         </methods>
       </class> <!-- TestCase.SignupPageTest -->
     </classes>
